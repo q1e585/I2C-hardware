@@ -1,0 +1,11 @@
+# Keil 编译生成文件
+Objects/
+Listings/
+DebugConfig/
+*.uvguix.*
+*.scvd
+*.hex
+*.bin
+
+# VS Code 配置
+.vscode/
