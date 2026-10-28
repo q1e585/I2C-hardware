@@ -57,7 +57,7 @@ uint8_t Dri_I2C_SendByte(uint8_t byte)
         ;
     if (timeout)
     {
-        // I2C2->DR;
+         I2C2->DR;
         return 1;
     }
     return 0;

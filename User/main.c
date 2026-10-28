@@ -1,19 +1,29 @@
 #include "stm32f10x.h" 
 
+#include "EEPROM.h"
+#include "string.h"
+#include "usart.h"
 
 
-
-
-char str2[20];
+uint8_t str2[20]={0};
 
 	  uint8_t str[20]="hello world ???????";
 int main(void)
 {
-	 uint8_t str[20]="hello world ???";
 	Int_Eeprom_Init();
 	Dri_Usart_Init();
-	Int_Eeprom_Writebyte(str,0x00,strlen(str));
-	Int_Eeprom_Readebyte(str2,0x06,8);
+
+	uint8_t chr='A';
+	// Dri_Usart_SendChr(chr);
+	Int_Eeprom_Writebyte(chr,0x01);
+	//  Int_Eeprom_Writebytes(chr,0x01,strlen(chr));
+
+	Int_Eeprom_Readbyte(0x01);
+	//  uint8_t str[20];
+	// Int_Eeprom_Readebytes(str,0x01,3);
+	// Dri_Usart_SendStr(str);
+	
+
 
 	while (1)
 	{
