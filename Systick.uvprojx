@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\Start;.\User;.\Lib;.\Hardware\KEY;.\Hardware\LED;.\Hardware\Usart;.\Hardware\I2C;.\Hardware\EEPROM;.\Hardware\DELAY</IncludePath>
+              <IncludePath>.\Start;.\User;.\Lib;.\Hardware\KEY;.\Hardware\LED;.\Hardware\Usart;.\Hardware\I2C;.\Hardware\EEPROM;.\Hardware\DELAY;.\Hardware\Systick</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -486,6 +486,16 @@
               <FileName>EEPROM.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Hardware\EEPROM\EEPROM.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Systick</GroupName>
+          <Files>
+            <File>
+              <FileName>systick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\Systick\systick.c</FilePath>
             </File>
           </Files>
         </Group>
